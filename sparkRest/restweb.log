@@ -1,0 +1,16 @@
+2014-06-27 17:22:09 INFO  log:67 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-06-27 17:22:09 INFO  log:67 - jetty-6.1.26
+2014-06-27 17:22:09 INFO  log:67 - NO JSP Support for /sparkRest, did not find org.apache.jasper.servlet.JspServlet
+2014-06-27 17:22:09 INFO  log:67 - Started SocketConnector@0.0.0.0:8080
+2014-06-27 17:23:21 INFO  log:67 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-06-27 17:23:21 INFO  log:67 - jetty-6.1.26
+2014-06-27 17:23:21 INFO  log:67 - NO JSP Support for /sparkRest, did not find org.apache.jasper.servlet.JspServlet
+2014-06-27 17:23:21 INFO  log:67 - Started SocketConnector@0.0.0.0:8080
+2014-06-27 17:24:11 INFO  log:67 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-06-27 17:24:11 INFO  log:67 - jetty-6.1.26
+2014-06-27 17:24:11 INFO  log:67 - NO JSP Support for /sparkRest, did not find org.apache.jasper.servlet.JspServlet
+2014-06-27 17:24:11 INFO  log:67 - Started SocketConnector@0.0.0.0:8080
+2014-06-27 17:27:27 INFO  log:67 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-06-27 17:27:27 INFO  log:67 - jetty-6.1.26
+2014-06-27 17:27:27 INFO  log:67 - NO JSP Support for /sparkRest, did not find org.apache.jasper.servlet.JspServlet
+2014-06-27 17:27:27 INFO  log:67 - Started SocketConnector@0.0.0.0:8080
