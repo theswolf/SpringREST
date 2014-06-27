@@ -1,0 +1,46 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+ 
+<!-- 	<http auto-config="true">
+		<intercept-url pattern="/rest/auth/**" access="ROLE_USER" />
+	</http>
+ 
+	<authentication-manager>
+	  <authentication-provider>
+	    <user-service>
+		<user name="mkyong" password="123456" authorities="ROLE_USER" />
+	    </user-service>
+	  </authentication-provider>
+	</authentication-manager> -->
+	
+<http  pattern="/rest/auth/**" entry-point-ref="restAuthenticationEntryPoint" use-expressions="true" auto-config="false" create-session="stateless" >
+    <custom-filter ref="authenticationTokenProcessingFilter" position="FORM_LOGIN_FILTER"   />
+    <intercept-url pattern="/rest/token" access="permitAll" />
+    <intercept-url pattern="/rest/auth/**" access="isAuthenticated()" />
+     
+ 
+    <logout />
+</http>
+ 
+<beans:bean class="core.september.common.security.CustomTokenAuthenticationFilter"
+    id="authenticationTokenProcessingFilter">
+    <beans:constructor-arg type="java.lang.String">
+        <beans:value>/rest/auth/**</beans:value>
+    </beans:constructor-arg>
+</beans:bean>
+
+<beans:bean name="tokenAuthManager" class="core.september.common.security.NoOpAuthenticationManager" />
+
+
+<authentication-manager>
+	  <authentication-provider user-service-ref="tokenAuthManager" />
+</authentication-manager> 
+	
+
+ 
+</beans:beans>
