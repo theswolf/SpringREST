@@ -2,9 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
 
 import core.september.sparkrest.app.RestApplication;
 import core.september.sparkrest.common.Constants;
@@ -16,7 +14,7 @@ public class UrlTests extends TestCase {
 	
 	RestApplication app;
 	String[] URLS = new String[]{
-			"http://localhost:8080/sparkRest/auth/uno"
+			"http://localhost:"+EmbeddedServer.TEST_PORT+"/auth/uno"
 	};
 	
 	public UrlTests() {
