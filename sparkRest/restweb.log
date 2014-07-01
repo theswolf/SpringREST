@@ -1351,3 +1351,130 @@ java.net.BindException: Indirizzo già in uso
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+2014-07-01 15:33:25 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 15:33:25 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 15:33:25 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@2da8bc4f{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 15:33:25 INFO  ServerConnector:265 - Started ServerConnector@3c03abf8{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 15:33:26 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 15:33:26 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 15:33:26 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@492249c8{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 15:33:26 WARN  AbstractLifeCycle:209 - FAILED ServerConnector@370875ae{HTTP/1.1}{0.0.0.0:9090}: java.net.BindException: Indirizzo già in uso
+java.net.BindException: Indirizzo già in uso
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:227)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:309)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at EmbeddedServer.startIfRequired(EmbeddedServer.java:36)
+	at UrlTests.init(UrlTests.java:36)
+	at UrlTests.<init>(UrlTests.java:31)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at junit.framework.TestSuite.createTest(TestSuite.java:135)
+	at junit.framework.TestSuite.addTestMethod(TestSuite.java:114)
+	at junit.framework.TestSuite.<init>(TestSuite.java:75)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader.getTest(JUnit3TestLoader.java:102)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader.loadTests(JUnit3TestLoader.java:59)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+2014-07-01 15:33:26 WARN  AbstractLifeCycle:209 - FAILED org.eclipse.jetty.server.Server@5507d9e4: java.net.BindException: Indirizzo già in uso
+java.net.BindException: Indirizzo già in uso
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:227)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:309)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at EmbeddedServer.startIfRequired(EmbeddedServer.java:36)
+	at UrlTests.init(UrlTests.java:36)
+	at UrlTests.<init>(UrlTests.java:31)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at junit.framework.TestSuite.createTest(TestSuite.java:135)
+	at junit.framework.TestSuite.addTestMethod(TestSuite.java:114)
+	at junit.framework.TestSuite.<init>(TestSuite.java:75)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader.getTest(JUnit3TestLoader.java:102)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader.loadTests(JUnit3TestLoader.java:59)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+2014-07-01 16:42:23 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:42:23 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:42:23 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@30bd8e3b{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:42:23 INFO  ServerConnector:265 - Started ServerConnector@195a404a{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:42:56 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:42:56 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:42:56 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@6cc4dc7c{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:42:56 INFO  ServerConnector:265 - Started ServerConnector@195a404a{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:45:30 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:45:30 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:45:31 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@6dbe7935{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:45:31 INFO  ServerConnector:265 - Started ServerConnector@43cdebe{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:46:08 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:46:08 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:46:08 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@7407bedc{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:46:08 INFO  ServerConnector:265 - Started ServerConnector@5b27706d{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:46:28 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:46:29 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:46:29 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@57b3af58{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:46:29 INFO  ServerConnector:265 - Started ServerConnector@16b50694{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:47:35 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:47:35 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:47:35 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@28839907{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:47:35 INFO  ServerConnector:265 - Started ServerConnector@5b27706d{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:48:21 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:48:22 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:48:22 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@55bce763{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:48:22 INFO  ServerConnector:265 - Started ServerConnector@16b50694{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:48:42 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:48:42 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:48:42 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@28839907{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:48:42 INFO  ServerConnector:265 - Started ServerConnector@5b27706d{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:51:57 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:51:57 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:51:57 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@4dfea0cf{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:51:57 INFO  ServerConnector:265 - Started ServerConnector@4096af55{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:52:59 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:52:59 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:52:59 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@4dfea0cf{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:52:59 INFO  ServerConnector:265 - Started ServerConnector@4096af55{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:55:30 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:55:31 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:55:31 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@7ab3b96f{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:55:31 INFO  ServerConnector:265 - Started ServerConnector@ea5fce7{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 16:57:55 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 16:57:55 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 16:57:55 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@7ab3b96f{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 16:57:55 INFO  ServerConnector:265 - Started ServerConnector@2c591d98{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 17:02:13 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 17:02:13 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 17:02:14 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@7ef9e0a{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 17:02:14 INFO  ServerConnector:265 - Started ServerConnector@5b21409a{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 17:02:22 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 17:02:22 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 17:02:22 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@3e228ba7{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 17:02:22 INFO  ServerConnector:265 - Started ServerConnector@4096af55{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 17:05:34 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 17:05:34 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 17:05:34 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@723e6611{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 17:05:34 INFO  ServerConnector:265 - Started ServerConnector@11bd5093{HTTP/1.1}{0.0.0.0:9090}
+2014-07-01 17:05:53 INFO  Server:290 - jetty-9.0.2.v20130417
+2014-07-01 17:05:53 INFO  StandardDescriptorProcessor:275 - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2014-07-01 17:05:53 INFO  ContextHandler:728 - started o.e.j.w.WebAppContext@5e9f20af{/,file:/home/trim/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+2014-07-01 17:05:53 INFO  ServerConnector:265 - Started ServerConnector@23f4ebfe{HTTP/1.1}{0.0.0.0:9090}

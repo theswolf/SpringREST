@@ -4,6 +4,7 @@ import java.util.UUID;
 
 import org.mongodb.morphia.annotations.Embedded;
 import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Transient;
 
 import core.september.sparkrest.common.Utils;
  
@@ -15,8 +16,11 @@ public class Account extends BaseEntity {
     private String hashedPassword;
     private String salt;
     private String email;
+    private String token;
     @Embedded
     private Address address;
+    @Transient
+    private String password;
     
     public Account() {
     	super();
@@ -24,7 +28,7 @@ public class Account extends BaseEntity {
     
     public Account(String name,String password, String mail) {
     	setName(name);
-    	setHashedPassword(Utils.INSTANCE.digest(password+getHashedPassword()));
+    	setHashedPassword(Utils.INSTANCE.digest(password+getSalt()));
     	setEmail(mail);
     }
  
@@ -78,7 +82,31 @@ public class Account extends BaseEntity {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-    
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public boolean checkExistence(Account storedAccount) {
+		setSalt(storedAccount.getSalt());
+		setHashedPassword(Utils.INSTANCE.digest(getPassword()+getSalt()));
+		return storedAccount.getName().equalsIgnoreCase(getName()) && 
+				storedAccount.getEmail().equalsIgnoreCase(getEmail()) &&
+				storedAccount.getHashedPassword().equalsIgnoreCase(getHashedPassword());
+	}
+	
     
  
 }

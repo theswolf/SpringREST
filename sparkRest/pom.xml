@@ -23,6 +23,7 @@
 		<org.glassfish.tyrus.version>1.2.1</org.glassfish.tyrus.version>
 		<org.mongodb.morphia.version>0.108</org.mongodb.morphia.version>
 		<org.apache.commons.version>2.2</org.apache.commons.version>
+		<ch.qos.logback.version>1.0.13</ch.qos.logback.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -43,7 +44,7 @@
 		</dependency>
 
 		<!-- Logging -->
-		<dependency>
+<!-- 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>${org.slf4j.version}</version>
@@ -53,19 +54,16 @@
 			<artifactId>jcl-over-slf4j</artifactId>
 			<version>${org.slf4j.version}</version>
 			<scope>runtime</scope>
-		</dependency>
+		</dependency> -->
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>${org.slf4j.version}</version>
-			<scope>runtime</scope>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${ch.qos.logback.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
-			<scope>runtime</scope>
-		</dependency>
+		<!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> 
+			<version>${org.slf4j.version}</version> <scope>runtime</scope> </dependency> 
+			<dependency> <groupId>log4j</groupId> <artifactId>log4j</artifactId> <version>${log4j.version}</version> 
+			<scope>runtime</scope> </dependency> -->
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -105,11 +103,8 @@
 			<artifactId>morphia</artifactId>
 			<version>${org.mongodb.morphia.version}</version>
 		</dependency>
-<!-- 		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-pool2</artifactId>
-			<version>${org.apache.commons.version}</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.apache.commons</groupId> <artifactId>commons-pool2</artifactId> 
+			<version>${org.apache.commons.version}</version> </dependency> -->
 	</dependencies>
 
 	<build>

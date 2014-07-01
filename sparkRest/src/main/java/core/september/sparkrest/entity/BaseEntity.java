@@ -4,11 +4,8 @@ import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Id;
 import org.mongodb.morphia.annotations.Property;
 import org.mongodb.morphia.annotations.Version;
-import org.mongodb.morphia.dao.BasicDAO;
 
 import com.google.gson.GsonBuilder;
-
-import core.september.sparkrest.data.DataStore;
  
 public abstract class BaseEntity {
 	
@@ -45,6 +42,10 @@ public abstract class BaseEntity {
     @Override
     public String toString() {
     	return gsonBuilder.create().toJson(this);
+    }
+    
+    public static <T> T fromString(Class<T> instanceClass, String input ) {
+    	return gsonBuilder.create().fromJson(input, instanceClass);
     }
     
  
