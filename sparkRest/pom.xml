@@ -44,17 +44,10 @@
 		</dependency>
 
 		<!-- Logging -->
-<!-- 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>${org.slf4j.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>jcl-over-slf4j</artifactId>
-			<version>${org.slf4j.version}</version>
-			<scope>runtime</scope>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-api</artifactId> 
+			<version>${org.slf4j.version}</version> </dependency> <dependency> <groupId>org.slf4j</groupId> 
+			<artifactId>jcl-over-slf4j</artifactId> <version>${org.slf4j.version}</version> 
+			<scope>runtime</scope> </dependency> -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
@@ -103,6 +96,12 @@
 			<artifactId>morphia</artifactId>
 			<version>${org.mongodb.morphia.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.mongodb.morphia</groupId>
+			<artifactId>morphia-logging-slf4j</artifactId>
+			<version>${org.mongodb.morphia.version}</version>
+		</dependency>
+
 		<!-- <dependency> <groupId>org.apache.commons</groupId> <artifactId>commons-pool2</artifactId> 
 			<version>${org.apache.commons.version}</version> </dependency> -->
 	</dependencies>

@@ -20,86 +20,90 @@ import com.google.gson.GsonBuilder;
 import core.september.sparkrest.common.Constants;
 import core.september.sparkrest.common.Utils;
 
-public class RestApplication implements spark.servlet.SparkApplication{
-	
+public class RestApplication implements spark.servlet.SparkApplication {
+
 	private GsonBuilder builder = new GsonBuilder();
 	final static Logger logger = LoggerFactory.getLogger(AppListener.class);
 	ExecutorService executor;
+
 	@Override
 	public void init() {
 		executor = Executors.newFixedThreadPool(Constants.THREAD_POOL);
 		publicAPI();
 		privateAPI();
-		
 
+	}
+
+	private String doOp(String path,Request req, Response res) {
+		try {
+			Callable<String> callable = Utils.INSTANCE.getController(path, req);
+			FutureTask<String> futureTask = new FutureTask<String>(callable);
+			executor.execute(futureTask);
+			return Utils.INSTANCE.json(res, futureTask.get());
+		} catch (Exception e) {
+			return Utils.INSTANCE.json(res,Utils.INSTANCE.handle500(e, res,
+					RestApplication.class));
+		}
 	}
 	
 	private void publicAPI() {
-		
+
 		Spark.get(new Route("/sysinfo") {
-			
+
 			@Override
 			public Object handle(Request req, Response res) {
 				Properties prop = System.getProperties();
-				return builder.create().toJson(prop);
-		
+				return Utils.INSTANCE.json(res, builder.create().toJson(prop));
+
 			}
 		});
-		
+
 		Spark.post(new Route("/pub/:customer/signup") {
 			@Override
 			public Object handle(Request req, Response res) {
-				
-				try {
-					Callable<String> callable = Utils.INSTANCE.getController("/pub/:customer/signup", req);
-					 FutureTask<String> futureTask = new FutureTask<String>(callable);
-					 executor.execute(futureTask);
-					 return futureTask.get();
-				}
-				catch(Exception e) {
-					logger.error(e.getMessage());
-					halt(404);
-				}
+				return doOp("/pub/:customer/signup",req,res);
 			}
 		});
-		
+
 		Spark.post(new Route("/pub/:customer/signin") {
-			
+
 			@Override
 			public Object handle(Request req, Response res) {
-				
-				try {
-					Callable<String> callable = Utils.INSTANCE.getController("/pub/:customer/signin", req);
-					 FutureTask<String> futureTask = new FutureTask<String>(callable);
-					 executor.execute(futureTask);
-					return futureTask.get();
-				}
-				catch(Exception e) {
-					return e.getMessage();
-					halt(404, "Bad token");
-				}
+				return doOp("/pub/:customer/signin",req,res);
+			}
+		});
+
+		Spark.get(new Route("/pub/505") {
+
+			@Override
+			public Object handle(Request req, Response res) {
+
+				return Utils.INSTANCE.json(res,Utils.INSTANCE.handle500(
+						new Exception("Called from Url"), res,
+						RestApplication.class));
+
 			}
 		});
 	}
-	
+
 	private void privateAPI() {
-		
+
 		Spark.before(new Filter("/auth/*") {
-			
+
 			@Override
 			public void handle(Request req, Response res) {
-				if(!req.headers().contains(Constants.AUTH_TOKEN)) {
+				if (!req.headers().contains(Constants.AUTH_TOKEN)) {
 					halt(401, "Bad token");
-				}				
+				}
 			}
 		});
-		
+
 		Spark.get(new Route("/auth/:user") {
-			
+
 			@Override
 			public Object handle(Request req, Response res) {
 				// TODO Auto-generated method stub
-				return req.params(":user");
+				return Utils.INSTANCE.json(res, req.params(":user"));
 			}
 		});
 	}

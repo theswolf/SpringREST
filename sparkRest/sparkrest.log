@@ -1,0 +1,232 @@
+237   DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+252   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.server.Server@7214dee1 added {qtp2084446795{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+276   DEBUG o.e.j.u.c.ContainerLifeCycle - HttpConnectionFactory@30e685a7{HTTP/1.1} added {HttpConfiguration@cee0d3a{32768,8192/8192,https://:0,[]},POJO}
+280   DEBUG o.e.j.u.c.ContainerLifeCycle - ServerConnector@3a06598f{null}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@7214dee1,UNMANAGED}
+281   DEBUG o.e.j.u.c.ContainerLifeCycle - ServerConnector@3a06598f{null}{0.0.0.0:0} added {qtp2084446795{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+281   DEBUG o.e.j.u.c.ContainerLifeCycle - ServerConnector@3a06598f{null}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3aca50a6,AUTO}
+282   DEBUG o.e.j.u.c.ContainerLifeCycle - ServerConnector@3a06598f{null}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@40799bcb,POJO}
+282   DEBUG o.e.j.u.c.ContainerLifeCycle - ServerConnector@3a06598f{null}{0.0.0.0:0} added {HttpConnectionFactory@30e685a7{HTTP/1.1},AUTO}
+285   DEBUG o.e.j.u.c.ContainerLifeCycle - ServerConnector@3a06598f{HTTP/1.1}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@7146c33d,MANAGED}
+286   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.server.Server@7214dee1 added {ServerConnector@3a06598f{HTTP/1.1}{0.0.0.0:9090},AUTO}
+328   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.server.session.SessionHandler@1263bf16 added {org.eclipse.jetty.server.session.HashSessionManager@78c48733,AUTO}
+328   DEBUG o.e.j.u.c.ContainerLifeCycle - o.e.j.w.WebAppContext@34f772{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@1263bf16,AUTO}
+332   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.security.ConstraintSecurityHandler@58ac7e0d added {org.eclipse.jetty.security.DefaultAuthenticatorFactory@51887299,POJO}
+334   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.server.session.SessionHandler@1263bf16 added {org.eclipse.jetty.security.ConstraintSecurityHandler@58ac7e0d,AUTO}
+338   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.security.ConstraintSecurityHandler@58ac7e0d added {org.eclipse.jetty.servlet.ServletHandler@7ce9942a,AUTO}
+338   DEBUG o.e.j.u.c.ContainerLifeCycle - o.e.j.w.WebAppContext@34f772{/,null,null} added {org.eclipse.jetty.servlet.ErrorPageErrorHandler@26600ed5,AUTO}
+345   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.server.Server@7214dee1 added {o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,null},AUTO}
+345   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.server.Server@7214dee1
+348   INFO  org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
+369   DEBUG o.e.j.s.handler.AbstractHandler - starting org.eclipse.jetty.server.Server@7214dee1
+369   DEBUG o.e.j.u.component.AbstractLifeCycle - starting qtp2084446795{STOPPED,8<=0<=200,i=0,q=0}
+370   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED qtp2084446795{STARTED,8<=8<=200,i=6,q=0}
+371   DEBUG o.e.j.u.component.AbstractLifeCycle - starting o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,null}
+387   DEBUG o.e.jetty.webapp.WebAppContext - Thread Context classloader WebAppClassLoader=152637289@9190f69
+387   DEBUG o.e.jetty.webapp.WebAppContext - Parent class loader: sun.misc.Launcher$AppClassLoader@58644d46 
+387   DEBUG o.e.jetty.webapp.WebAppContext - Parent class loader: sun.misc.Launcher$ExtClassLoader@167fdd33 
+387   DEBUG o.e.jetty.webapp.WebAppContext - preConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,null} with org.eclipse.jetty.webapp.WebInfConfiguration@21d6dd3d
+389   DEBUG o.e.j.webapp.WebInfConfiguration - Set temp dir /tmp/jetty-0.0.0.0-9090-webapp-_-any-
+391   DEBUG o.e.jetty.webapp.WebAppContext - preConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,null} with org.eclipse.jetty.webapp.WebXmlConfiguration@7828aec7
+419   DEBUG o.e.jetty.webapp.WebDescriptor - jar:file:/home/christian/.m2/repository/org/eclipse/jetty/jetty-webapp/9.0.2.v20130417/jetty-webapp-9.0.2.v20130417.jar!/org/eclipse/jetty/webapp/webdefault.xml: Calculated metadatacomplete = True with version=2.5
+422   DEBUG org.eclipse.jetty.xml.XmlParser - resolveEntity(-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN, http://java.sun.com/dtd/web-app_2_3.dtd)
+469   DEBUG org.eclipse.jetty.xml.XmlParser - Redirected entity http://java.sun.com/dtd/web-app_2_3.dtd --> jar:file:/home/christian/.m2/repository/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016.jar!/javax/servlet/resources/web-app_2_3.dtd
+479   DEBUG o.e.jetty.webapp.WebDescriptor - file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/WEB-INF/web.xml: Calculated metadatacomplete = NotSet with version=DTD
+479   DEBUG o.e.jetty.webapp.WebAppContext - preConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,null} with org.eclipse.jetty.webapp.MetaInfConfiguration@a5fa145
+480   DEBUG o.e.jetty.webapp.WebAppContext - preConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,null} with org.eclipse.jetty.webapp.FragmentConfiguration@7a199469
+480   DEBUG o.e.jetty.webapp.WebAppContext - preConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,null} with org.eclipse.jetty.webapp.JettyWebXmlConfiguration@d3b47e6
+489   DEBUG o.e.jetty.webapp.WebAppContext - configure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,STARTING} with org.eclipse.jetty.webapp.WebInfConfiguration@21d6dd3d
+489   DEBUG o.e.jetty.webapp.WebAppContext - configure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,STARTING} with org.eclipse.jetty.webapp.WebXmlConfiguration@7828aec7
+494   DEBUG o.e.jetty.webapp.WebAppContext - configure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,STARTING} with org.eclipse.jetty.webapp.MetaInfConfiguration@a5fa145
+494   DEBUG o.e.jetty.webapp.WebAppContext - configure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,STARTING} with org.eclipse.jetty.webapp.FragmentConfiguration@7a199469
+494   DEBUG o.e.jetty.webapp.WebAppContext - configure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,STARTING} with org.eclipse.jetty.webapp.JettyWebXmlConfiguration@d3b47e6
+494   DEBUG o.e.j.w.JettyWebXmlConfiguration - Configuring web-jetty.xml
+495   DEBUG org.eclipse.jetty.webapp.MetaData - metadata resolve o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,STARTING}
+496   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class org.eclipse.jetty.servlet.listener.ELContextCleaner
+496   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class org.eclipse.jetty.servlet.listener.ELContextCleaner from sun.misc.Launcher$AppClassLoader@58644d46
+499   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class org.eclipse.jetty.servlet.listener.IntrospectorCleaner
+499   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class org.eclipse.jetty.servlet.listener.IntrospectorCleaner from sun.misc.Launcher$AppClassLoader@58644d46
+503   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7ce9942a added {default@5c13d641==null,-1,false,AUTO}
+505   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7ce9942a added {[/]=>default,POJO}
+505   DEBUG o.e.jetty.servlet.ServletHandler - filterNameMap={}
+505   DEBUG o.e.jetty.servlet.ServletHandler - pathFilters=null
+505   DEBUG o.e.jetty.servlet.ServletHandler - servletFilterMap=null
+505   DEBUG o.e.jetty.servlet.ServletHandler - servletPathMap={/=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false}
+506   DEBUG o.e.jetty.servlet.ServletHandler - servletNameMap={default=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false}
+506   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7ce9942a added {jsp@19c47==null,-1,false,AUTO}
+507   INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+507   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7ce9942a added {[*.jsp, *.jspf, *.jspx, *.xsp, *.JSP, *.JSPF, *.JSPX, *.XSP]=>jsp,POJO}
+508   DEBUG o.e.jetty.servlet.ServletHandler - filterNameMap={}
+508   DEBUG o.e.jetty.servlet.ServletHandler - pathFilters=null
+508   DEBUG o.e.jetty.servlet.ServletHandler - servletFilterMap=null
+508   DEBUG o.e.jetty.servlet.ServletHandler - servletPathMap={*.jspx=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSPX=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.jsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSPF=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.jspf=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSP=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.xsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.XSP=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, /=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false}
+509   DEBUG o.e.jetty.servlet.ServletHandler - servletNameMap={default=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false, jsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false}
+511   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7ce9942a added {SparkFilter,AUTO}
+514   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7ce9942a added {[/*]/[]==0=>SparkFilter,POJO}
+515   DEBUG o.e.jetty.servlet.ServletHandler - filterNameMap={SparkFilter=SparkFilter}
+515   DEBUG o.e.jetty.servlet.ServletHandler - pathFilters=[[/*]/[]==0=>SparkFilter]
+515   DEBUG o.e.jetty.servlet.ServletHandler - servletFilterMap={}
+516   DEBUG o.e.jetty.servlet.ServletHandler - servletPathMap={*.jspx=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSPX=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.jsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSPF=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.jspf=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSP=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.xsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.XSP=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, /=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false}
+516   DEBUG o.e.jetty.servlet.ServletHandler - servletNameMap={default=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false, jsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false}
+517   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7ce9942a added {Log@12b24==null,-1,false,AUTO}
+517   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.servlet.ServletHandler@7ce9942a added {[/logs]=>Log,POJO}
+517   DEBUG o.e.jetty.servlet.ServletHandler - filterNameMap={SparkFilter=SparkFilter}
+517   DEBUG o.e.jetty.servlet.ServletHandler - pathFilters=[[/*]/[]==0=>SparkFilter]
+517   DEBUG o.e.jetty.servlet.ServletHandler - servletFilterMap={}
+518   DEBUG o.e.jetty.servlet.ServletHandler - servletPathMap={*.jspx=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSPX=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.jsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSPF=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.jspf=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSP=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.xsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.XSP=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, /logs=Log@12b24==ch.qos.logback.classic.ViewStatusMessagesServlet,-1,false, /=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false}
+518   DEBUG o.e.jetty.servlet.ServletHandler - servletNameMap={default=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false, Log=Log@12b24==ch.qos.logback.classic.ViewStatusMessagesServlet,-1,false, jsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false}
+518   DEBUG o.e.j.s.handler.AbstractHandler - starting o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,STARTING}
+519   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.server.session.SessionHandler@1263bf16
+519   DEBUG o.e.j.s.handler.AbstractHandler - starting org.eclipse.jetty.server.session.SessionHandler@1263bf16
+519   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.server.session.HashSessionManager@78c48733
+520   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.server.session.HashSessionIdManager@5e70f093
+521   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.server.session.HashSessionIdManager@5e70f093
+521   DEBUG o.e.j.u.c.ContainerLifeCycle - org.eclipse.jetty.server.Server@7214dee1 added {org.eclipse.jetty.server.session.HashSessionIdManager@5e70f093,MANAGED}
+521   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.server.session.HashSessionManager@78c48733
+521   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.security.ConstraintSecurityHandler@58ac7e0d
+523   DEBUG o.e.j.s.handler.AbstractHandler - starting org.eclipse.jetty.security.ConstraintSecurityHandler@58ac7e0d
+523   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.servlet.ServletHandler@7ce9942a
+524   DEBUG o.e.jetty.servlet.ServletHandler - filterNameMap={SparkFilter=SparkFilter}
+524   DEBUG o.e.jetty.servlet.ServletHandler - pathFilters=[[/*]/[]==0=>SparkFilter]
+524   DEBUG o.e.jetty.servlet.ServletHandler - servletFilterMap={}
+525   DEBUG o.e.jetty.servlet.ServletHandler - servletPathMap={*.jspx=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSPX=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.jsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSPF=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.jspf=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.JSP=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.xsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, *.XSP=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false, /logs=Log@12b24==ch.qos.logback.classic.ViewStatusMessagesServlet,-1,false, /=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false}
+525   DEBUG o.e.jetty.servlet.ServletHandler - servletNameMap={default=default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false, Log=Log@12b24==ch.qos.logback.classic.ViewStatusMessagesServlet,-1,false, jsp=jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false}
+525   DEBUG o.e.j.s.handler.AbstractHandler - starting org.eclipse.jetty.servlet.ServletHandler@7ce9942a
+525   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.servlet.ServletHandler@7ce9942a
+525   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.security.ConstraintSecurityHandler@58ac7e0d
+525   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.server.session.SessionHandler@1263bf16
+525   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.servlet.ErrorPageErrorHandler@26600ed5
+525   DEBUG o.e.j.s.handler.AbstractHandler - starting org.eclipse.jetty.servlet.ErrorPageErrorHandler@26600ed5
+525   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.servlet.ErrorPageErrorHandler@26600ed5
+526   DEBUG o.e.j.server.handler.ContextHandler - contextInitialized: javax.servlet.ServletContextEvent[source=ServletContext@o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,STARTING}]->org.eclipse.jetty.servlet.listener.ELContextCleaner@28a33f8
+526   DEBUG o.e.j.server.handler.ContextHandler - contextInitialized: javax.servlet.ServletContextEvent[source=ServletContext@o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,STARTING}]->org.eclipse.jetty.servlet.listener.IntrospectorCleaner@639de5cc
+526   DEBUG o.e.j.u.component.AbstractLifeCycle - starting default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false
+528   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class org.eclipse.jetty.servlet.DefaultServlet
+528   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class org.eclipse.jetty.servlet.DefaultServlet from sun.misc.Launcher$AppClassLoader@58644d46
+528   DEBUG org.eclipse.jetty.servlet.Holder - Holding class org.eclipse.jetty.servlet.DefaultServlet
+529   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,false
+536   DEBUG o.e.jetty.servlet.ServletHolder - Filter.init org.eclipse.jetty.servlet.DefaultServlet@334c3584
+537   DEBUG o.e.jetty.servlet.DefaultServlet - resource base = null
+537   DEBUG o.e.j.u.component.AbstractLifeCycle - starting jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false
+538   DEBUG org.eclipse.jetty.servlet.Holder - Holding class org.eclipse.jetty.servlet.NoJspServlet
+538   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED jsp@19c47==org.eclipse.jetty.servlet.NoJspServlet,0,false
+538   DEBUG o.e.jetty.servlet.ServletHolder - Filter.init org.eclipse.jetty.servlet.NoJspServlet@3e6f26be
+538   DEBUG o.e.j.u.component.AbstractLifeCycle - starting SparkFilter
+539   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class spark.servlet.SparkFilter
+539   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class spark.servlet.SparkFilter from sun.misc.Launcher$AppClassLoader@58644d46
+540   DEBUG org.eclipse.jetty.servlet.Holder - Holding class spark.servlet.SparkFilter
+540   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED SparkFilter
+540   DEBUG o.e.jetty.servlet.FilterHolder - Filter.init spark.servlet.SparkFilter@6048edc
+542   DEBUG spark.route.RouteMatcherFactory - creates RouteMatcher
+548   DEBUG spark.route.SimpleRouteMatcher - Adds route: get, /sysinfo, core.september.sparkrest.app.RestApplication$1@4cc8a532
+548   DEBUG spark.route.SimpleRouteMatcher - Adds route: post, /pub/:customer/signup, core.september.sparkrest.app.RestApplication$2@5873f046
+549   DEBUG spark.route.SimpleRouteMatcher - Adds route: post, /pub/:customer/signin, core.september.sparkrest.app.RestApplication$3@8c3a5dc
+549   DEBUG spark.route.SimpleRouteMatcher - Adds route: get, /pub/505, core.september.sparkrest.app.RestApplication$4@30723885
+549   DEBUG spark.route.SimpleRouteMatcher - Adds route: before, /auth/*, core.september.sparkrest.app.RestApplication$5@28d815e6
+549   DEBUG spark.route.SimpleRouteMatcher - Adds route: get, /auth/:user, core.september.sparkrest.app.RestApplication$6@316cf1e
+556   DEBUG o.e.j.u.component.AbstractLifeCycle - starting Log@12b24==ch.qos.logback.classic.ViewStatusMessagesServlet,-1,false
+557   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class ch.qos.logback.classic.ViewStatusMessagesServlet
+557   DEBUG o.e.jetty.webapp.WebAppClassLoader - loaded class ch.qos.logback.classic.ViewStatusMessagesServlet from sun.misc.Launcher$AppClassLoader@58644d46
+557   DEBUG org.eclipse.jetty.servlet.Holder - Holding class ch.qos.logback.classic.ViewStatusMessagesServlet
+557   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED Log@12b24==ch.qos.logback.classic.ViewStatusMessagesServlet,-1,false
+557   INFO  o.e.j.server.handler.ContextHandler - started o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+557   DEBUG o.e.jetty.webapp.WebAppContext - postConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE} with org.eclipse.jetty.webapp.WebInfConfiguration@21d6dd3d
+557   DEBUG o.e.jetty.webapp.WebAppContext - postConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE} with org.eclipse.jetty.webapp.WebXmlConfiguration@7828aec7
+557   DEBUG o.e.jetty.webapp.WebAppContext - postConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE} with org.eclipse.jetty.webapp.MetaInfConfiguration@a5fa145
+558   DEBUG o.e.jetty.webapp.WebAppContext - postConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE} with org.eclipse.jetty.webapp.FragmentConfiguration@7a199469
+558   DEBUG o.e.jetty.webapp.WebAppContext - postConfigure o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE} with org.eclipse.jetty.webapp.JettyWebXmlConfiguration@d3b47e6
+558   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+558   DEBUG o.e.j.u.component.AbstractLifeCycle - starting ServerConnector@3a06598f{HTTP/1.1}{0.0.0.0:9090}
+561   DEBUG o.e.j.u.c.ContainerLifeCycle - ServerConnector@3a06598f{HTTP/1.1}{0.0.0.0:9090} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9090],POJO}
+561   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3aca50a6
+562   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3aca50a6
+563   DEBUG o.e.j.u.component.AbstractLifeCycle - starting HttpConnectionFactory@30e685a7{HTTP/1.1}
+563   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED HttpConnectionFactory@30e685a7{HTTP/1.1}
+563   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@7146c33d
+565   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.io.SelectorManager$ManagedSelector@5331b3de keys=-1 selected=-1
+567   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.io.SelectorManager$ManagedSelector@5331b3de keys=0 selected=0
+567   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=8<=200,i=8,q=0} dispatched org.eclipse.jetty.io.SelectorManager$ManagedSelector@5331b3de keys=0 selected=0
+567   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.io.SelectorManager$ManagedSelector@5b1e5a2c keys=-1 selected=-1
+568   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.io.SelectorManager$ManagedSelector@5b1e5a2c keys=0 selected=0
+568   DEBUG o.eclipse.jetty.io.SelectorManager - Starting Thread[qtp2084446795-20-selector-0,5,main] on org.eclipse.jetty.io.SelectorManager$ManagedSelector@5331b3de keys=0 selected=0
+568   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=8<=200,i=7,q=0} dispatched org.eclipse.jetty.io.SelectorManager$ManagedSelector@5b1e5a2c keys=0 selected=0
+568   DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+568   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.io.SelectorManager$ManagedSelector@6f7c11e6 keys=-1 selected=-1
+568   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.io.SelectorManager$ManagedSelector@6f7c11e6 keys=0 selected=0
+568   DEBUG o.eclipse.jetty.io.SelectorManager - Starting Thread[qtp2084446795-22-selector-1,5,main] on org.eclipse.jetty.io.SelectorManager$ManagedSelector@5b1e5a2c keys=0 selected=0
+568   DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+568   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=8<=200,i=6,q=0} dispatched org.eclipse.jetty.io.SelectorManager$ManagedSelector@6f7c11e6 keys=0 selected=0
+569   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.io.SelectorManager$ManagedSelector@1e30f8e5 keys=-1 selected=-1
+569   DEBUG o.eclipse.jetty.io.SelectorManager - Starting Thread[qtp2084446795-21-selector-2,5,main] on org.eclipse.jetty.io.SelectorManager$ManagedSelector@6f7c11e6 keys=0 selected=0
+569   DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+569   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.io.SelectorManager$ManagedSelector@1e30f8e5 keys=0 selected=0
+569   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=8<=200,i=5,q=0} dispatched org.eclipse.jetty.io.SelectorManager$ManagedSelector@1e30f8e5 keys=0 selected=0
+569   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.io.SelectorManager$ManagedSelector@634a404b keys=-1 selected=-1
+569   DEBUG o.eclipse.jetty.io.SelectorManager - Starting Thread[qtp2084446795-24-selector-3,5,main] on org.eclipse.jetty.io.SelectorManager$ManagedSelector@1e30f8e5 keys=0 selected=0
+569   DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+569   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.io.SelectorManager$ManagedSelector@634a404b keys=0 selected=0
+570   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=8<=200,i=4,q=0} dispatched org.eclipse.jetty.io.SelectorManager$ManagedSelector@634a404b keys=0 selected=0
+570   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.io.SelectorManager$ManagedSelector@4a2ca934 keys=-1 selected=-1
+570   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.io.SelectorManager$ManagedSelector@4a2ca934 keys=0 selected=0
+570   DEBUG o.eclipse.jetty.io.SelectorManager - Starting Thread[qtp2084446795-23-selector-4,5,main] on org.eclipse.jetty.io.SelectorManager$ManagedSelector@634a404b keys=0 selected=0
+570   DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+570   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=8<=200,i=3,q=0} dispatched org.eclipse.jetty.io.SelectorManager$ManagedSelector@4a2ca934 keys=0 selected=0
+570   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.io.SelectorManager$ManagedSelector@45d072b6 keys=-1 selected=-1
+570   DEBUG o.eclipse.jetty.io.SelectorManager - Starting Thread[qtp2084446795-26-selector-5,5,main] on org.eclipse.jetty.io.SelectorManager$ManagedSelector@4a2ca934 keys=0 selected=0
+570   DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+571   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.io.SelectorManager$ManagedSelector@45d072b6 keys=0 selected=0
+571   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=8<=200,i=2,q=0} dispatched org.eclipse.jetty.io.SelectorManager$ManagedSelector@45d072b6 keys=0 selected=0
+571   DEBUG o.e.j.u.component.AbstractLifeCycle - starting org.eclipse.jetty.io.SelectorManager$ManagedSelector@5cbe5d39 keys=-1 selected=-1
+571   DEBUG o.eclipse.jetty.io.SelectorManager - Starting Thread[qtp2084446795-27-selector-6,5,main] on org.eclipse.jetty.io.SelectorManager$ManagedSelector@45d072b6 keys=0 selected=0
+571   DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+571   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.io.SelectorManager$ManagedSelector@5cbe5d39 keys=0 selected=0
+571   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=8<=200,i=1,q=0} dispatched org.eclipse.jetty.io.SelectorManager$ManagedSelector@5cbe5d39 keys=0 selected=0
+571   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@7146c33d
+571   DEBUG o.eclipse.jetty.io.SelectorManager - Starting Thread[qtp2084446795-25-selector-7,5,main] on org.eclipse.jetty.io.SelectorManager$ManagedSelector@5cbe5d39 keys=0 selected=0
+572   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=9<=200,i=1,q=0} dispatched org.eclipse.jetty.server.AbstractConnector$Acceptor@2af72a60
+572   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=9<=200,i=1,q=1} dispatched org.eclipse.jetty.server.AbstractConnector$Acceptor@7f52313d
+573   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=10<=200,i=0,q=1} dispatched org.eclipse.jetty.server.AbstractConnector$Acceptor@56cdaf88
+573   DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=11<=200,i=0,q=1} dispatched org.eclipse.jetty.server.AbstractConnector$Acceptor@2572e91c
+573   INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@3a06598f{HTTP/1.1}{0.0.0.0:9090}
+573   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED ServerConnector@3a06598f{HTTP/1.1}{0.0.0.0:9090}
+573   DEBUG o.e.j.u.component.AbstractLifeCycle - STARTED org.eclipse.jetty.server.Server@7214dee1
+579   DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+10353 DEBUG o.eclipse.jetty.io.SelectorManager - Queued change org.eclipse.jetty.io.SelectorManager$ManagedSelector$Accept@67e7126d
+10354 DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop woken up from select, 0/0 selected
+10354 DEBUG o.eclipse.jetty.io.SelectorManager - Running change org.eclipse.jetty.io.SelectorManager$ManagedSelector$Accept@67e7126d
+10370 DEBUG o.eclipse.jetty.io.AbstractEndPoint - onOpen SelectChannelEndPoint@3c205683{/127.0.0.1:58989<r-l>/127.0.0.1:9090,o=true,is=false,os=false,fi=FillInterest@3ce2756f{false,null},wf=WriteFlusher@1acf18c{IDLE},it=30000}{null}{io=0,kio=0,kro=0}
+10370 DEBUG org.eclipse.jetty.io.IdleTimeout - SelectChannelEndPoint@3c205683{/127.0.0.1:58989<r-l>/127.0.0.1:9090,o=true,is=false,os=false,fi=FillInterest@3ce2756f{false,null},wf=WriteFlusher@1acf18c{IDLE},it=30000}{null}{io=0,kio=0,kro=0} idle timeout check, elapsed: 6 ms, remaining: 29994 ms
+10398 DEBUG o.e.jetty.server.HttpConnection - New HTTP Connection HttpConnection@3b683a1{IDLE},g=HttpGenerator{s=START},p=HttpParser{s=START,0 of 0}
+10399 DEBUG o.e.jetty.io.AbstractConnection - onOpen HttpConnection@3b683a1{IDLE},g=HttpGenerator{s=START},p=HttpParser{s=START,0 of 0}
+10400 DEBUG o.e.jetty.io.AbstractConnection - fillInterested HttpConnection@3b683a1{IDLE},g=HttpGenerator{s=START},p=HttpParser{s=START,0 of 0}
+10401 DEBUG o.e.jetty.io.SelectChannelEndPoint - Local interests updated 0 -> 1 for SelectChannelEndPoint@3c205683{/127.0.0.1:58989<r-l>/127.0.0.1:9090,o=true,is=false,os=false,fi=FillInterest@3ce2756f{true,AC.ExReadCB@3b683a1},wf=WriteFlusher@1acf18c{IDLE},it=30000}{HttpConnection@3b683a1{INTERESTED},g=HttpGenerator{s=START},p=HttpParser{s=START,0 of 0}}{io=1,kio=0,kro=0}
+10402 DEBUG o.eclipse.jetty.io.SelectorManager - Created SelectChannelEndPoint@3c205683{/127.0.0.1:58989<r-l>/127.0.0.1:9090,o=true,is=false,os=false,fi=FillInterest@3ce2756f{true,AC.ExReadCB@3b683a1},wf=WriteFlusher@1acf18c{IDLE},it=30000}{HttpConnection@3b683a1{INTERESTED},g=HttpGenerator{s=START},p=HttpParser{s=START,0 of 0}}{io=1,kio=0,kro=0}
+10402 DEBUG o.eclipse.jetty.io.SelectorManager - Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@5b467135
+10402 DEBUG o.e.jetty.io.SelectChannelEndPoint - Key interests updated 0 -> 1
+10402 DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+10403 DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop woken up from select, 1/1 selected
+10403 DEBUG o.e.jetty.io.SelectChannelEndPoint - Key interests updated 1 -> 0
+10403 DEBUG o.e.jetty.io.SelectChannelEndPoint - Local interests updated 1 -> 0 for SelectChannelEndPoint@3c205683{/127.0.0.1:58989<r-l>/127.0.0.1:9090,o=true,is=false,os=false,fi=FillInterest@3ce2756f{true,AC.ExReadCB@3b683a1},wf=WriteFlusher@1acf18c{IDLE},it=30000}{HttpConnection@3b683a1{INTERESTED},g=HttpGenerator{s=START},p=HttpParser{s=START,0 of 0}}{io=0,kio=0,kro=1}
+10404 DEBUG o.eclipse.jetty.io.SelectorManager - Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@5b467135
+10404 DEBUG o.e.j.util.thread.QueuedThreadPool - qtp2084446795{STARTED,8<=13<=200,i=1,q=0} dispatched AC.ExReadCB@3b683a1
+10404 DEBUG o.eclipse.jetty.io.SelectorManager - Selector loop waiting on select
+10404 DEBUG o.e.jetty.server.HttpConnection - HttpConnection@3b683a1{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=START,0 of 0} onFillable org.eclipse.jetty.server.HttpChannelState@4396650e@IDLE,initial
+10407 DEBUG o.eclipse.jetty.io.ChannelEndPoint - filled 393 SelectChannelEndPoint@3c205683{/127.0.0.1:58989<r-l>/127.0.0.1:9090,o=true,is=false,os=false,fi=FillInterest@3ce2756f{false,null},wf=WriteFlusher@1acf18c{IDLE},it=30000}{HttpConnection@3b683a1{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=START,0 of 0}}{io=0,kio=0,kro=1}
+10407 DEBUG o.e.jetty.server.HttpConnection - HttpConnection@3b683a1{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=START,0 of 0} filled 393
+10411 DEBUG o.eclipse.jetty.server.HttpChannel - HttpChannelOverHttp@7c56707f{r=1,a=IDLE} content java.nio.HeapByteBufferR[pos=270 lim=393 cap=16384]
+10411 DEBUG org.eclipse.jetty.server.HttpInput - org.eclipse.jetty.server.HttpConnection$Input@464bd9d3 queued java.nio.HeapByteBufferR[pos=270 lim=393 cap=16384]
+10411 DEBUG org.eclipse.jetty.server.HttpInput - org.eclipse.jetty.server.HttpConnection$Input@464bd9d3 shutdown
+10411 DEBUG o.eclipse.jetty.server.HttpChannel - HttpChannelOverHttp@7c56707f{r=1,a=IDLE} handle enter
+10412 DEBUG org.eclipse.jetty.server.Server - REQUEST /pub/september/signup on HttpChannelOverHttp@7c56707f{r=1,a=DISPATCHED}
+10412 DEBUG o.e.j.server.handler.ContextHandler - scope null||/pub/september/signup @ o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+10413 DEBUG o.e.j.server.handler.ContextHandler - context=||/pub/september/signup @ o.e.j.w.WebAppContext@34f772{/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/,AVAILABLE}
+10415 DEBUG org.eclipse.jetty.server.session - sessionManager=org.eclipse.jetty.server.session.HashSessionManager@78c48733
+10415 DEBUG org.eclipse.jetty.server.session - session=null
+10415 DEBUG o.e.jetty.servlet.ServletHandler - servlet |/pub/september/signup|null -> default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,true
+10424 DEBUG o.e.jetty.servlet.ServletHandler - chain=SparkFilter->default@5c13d641==org.eclipse.jetty.servlet.DefaultServlet,0,true
+10426 DEBUG o.e.jetty.servlet.ServletHandler - call filter SparkFilter
+10426 DEBUG spark.servlet.SparkFilter - /pub/september/signup
+10428 DEBUG spark.webserver.MatcherFilter - httpMethod:post, uri: /pub/september/signup
+10430 DEBUG spark.Request - get params
+10431 DEBUG spark.Request - matchedPart: :customer = september
+10431 DEBUG spark.Request - get splat
+10435 DEBUG org.eclipse.jetty.server.HttpInput - org.eclipse.jetty.server.HttpConnection$Input@464bd9d3 consumed java.nio.HeapByteBufferR[pos=393 lim=393 cap=16384]

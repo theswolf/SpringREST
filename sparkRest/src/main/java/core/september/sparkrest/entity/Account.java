@@ -19,8 +19,8 @@ public class Account extends BaseEntity {
     private String token;
     @Embedded
     private Address address;
-    @Transient
-    private String password;
+//    @Transient
+//    private String password;
     
     public Account() {
     	super();
@@ -91,17 +91,17 @@ public class Account extends BaseEntity {
 		this.token = token;
 	}
 
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
+//	public String getPassword() {
+//		return password;
+//	}
+//
+//	public void setPassword(String password) {
+//		this.password = password;
+//	}
 
 	public boolean checkExistence(Account storedAccount) {
 		setSalt(storedAccount.getSalt());
-		setHashedPassword(Utils.INSTANCE.digest(getPassword()+getSalt()));
+		setHashedPassword(Utils.INSTANCE.digest(getHashedPassword()+getSalt()));
 		return storedAccount.getName().equalsIgnoreCase(getName()) && 
 				storedAccount.getEmail().equalsIgnoreCase(getEmail()) &&
 				storedAccount.getHashedPassword().equalsIgnoreCase(getHashedPassword());

@@ -122,7 +122,7 @@ public class UrlTests extends TestCase {
 		DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
 
 		Account account = new Account("user", "pass", "mail.example.com");
-		account.setPassword("pass");
+		account.setHashedPassword("pass");
 		wr.writeBytes(account.toString());
 		wr.flush();
 		wr.close();

@@ -7,6 +7,7 @@ public class Constants {
 	public static final String SUCCESS = "SUCCESS";
 	public static final int THREAD_POOL = 256;
 	public static boolean TEST = false;
+	public final static String E500 = "The server encountered an unexpected condition which prevented it from fulfilling the request.";
 	public static String DB_NAME(){
 		return TEST ? "sparktest" : "sparkdev";
 	}

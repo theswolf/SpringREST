@@ -5,12 +5,12 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
 import org.glassfish.tyrus.server.Server;
+import org.mongodb.morphia.logging.LogrFactory;
+import org.mongodb.morphia.logging.MorphiaLoggerFactory;
+import org.mongodb.morphia.logging.slf4j.SLF4JLoggerImplFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import ch.qos.logback.classic.LoggerContext;
-import ch.qos.logback.core.status.OnConsoleStatusListener;
-import ch.qos.logback.core.status.StatusManager;
 import core.september.sparkrest.app.socket.AppEndpoint;
 
 @WebListener
@@ -20,10 +20,7 @@ public class AppListener implements ServletContextListener {
 	final static Logger logger = LoggerFactory.getLogger(AppListener.class);
 
 	public void contextInitialized(ServletContextEvent servletContextEvent) {
-//		LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
-//		StatusManager statusManager = lc.getStatusManager();
-//		OnConsoleStatusListener onConsoleListener = new OnConsoleStatusListener();
-//		statusManager.add(onConsoleListener);
+		MorphiaLoggerFactory.registerLogger(SLF4JLoggerImplFactory.class);
 		runServer();
 
 	}

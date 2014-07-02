@@ -10,6 +10,7 @@ import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Enumeration;
 import java.util.concurrent.Callable;
 import java.util.jar.JarEntry;
@@ -22,6 +23,7 @@ import org.slf4j.LoggerFactory;
 import spark.Request;
 import spark.Response;
 import core.september.sparkrest.annotation.Controller;
+import core.september.sparkrest.app.AppListener;
 import core.september.sparkrest.controller.BaseController;
 import core.september.sparkrest.data.DataStore;
 
@@ -35,10 +37,15 @@ public class Utils {
 		
 	}
 	
-	public static String handleThrowable(Throwable t,Response res) {
-		res.status(505);
-		//res.body(t.getMessage());
-		return t.getMessage();
+	public String handle500(Throwable t,Response res,Class instanceClass) {
+		LoggerFactory.getLogger(instanceClass).debug(t.getMessage());
+		res.status(500);
+		return Constants.E500;
+	}
+	
+	public String json(Response res,String message) {
+		res.type("application/json");
+		return message;
 	}
 	
 	
@@ -46,7 +53,7 @@ public class Utils {
 	public  String digest(String input) {
 		try {
 			MessageDigest md = MessageDigest.getInstance(Constants.DIGEST_ALG);
-			return new String(md.digest(input.getBytes()));
+			return new String(Base64.getEncoder().encode(md.digest(input.getBytes())));
 		} catch (NoSuchAlgorithmException e) {
 			// TODO Auto-generated catch block
 			LoggerFactory.getLogger(Utils.class).error(e.getMessage());
