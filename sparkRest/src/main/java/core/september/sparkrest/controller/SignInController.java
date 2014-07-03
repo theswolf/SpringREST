@@ -1,6 +1,9 @@
 package core.september.sparkrest.controller;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.dao.BasicDAO;
@@ -13,7 +16,7 @@ import core.september.sparkrest.common.Utils;
 import core.september.sparkrest.entity.Account;
 import core.september.sparkrest.entity.Customer;
 
-@Controller(path="/pub/:customer/signin")
+@Controller(path="/sec/:customer/signin")
 public class SignInController extends BaseController {
 
 	public SignInController(Request req) {
@@ -48,6 +51,7 @@ public class SignInController extends BaseController {
 					throw new Exception("Not valid cred");
 				}
 				storedAccount.setToken(Utils.INSTANCE.digest(UUID.randomUUID().toString()));
+				storedAccount.setTokenExpireAt(new Date(Calendar.getInstance().getTime().getTime()+TimeUnit.DAYS.toMillis(50)));
 				accountDao.save(storedAccount);
 				return storedAccount.getToken();
 				

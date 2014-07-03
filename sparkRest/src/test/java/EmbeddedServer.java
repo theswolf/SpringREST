@@ -1,5 +1,6 @@
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.Loader;
+import org.eclipse.jetty.server.nio.SelectChannelConnector;
+import org.eclipse.jetty.server.ssl.SslSocketConnector;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 
@@ -13,6 +14,7 @@ public class EmbeddedServer
  
     public static final String TEST_CONTEXT = "/";
     public static final int TEST_PORT = 9090;
+    public static final int TEST_SECURE_PORT = 9443;
  
     public static void startIfRequired() throws Exception
     {
@@ -32,6 +34,33 @@ public class EmbeddedServer
              context.setParentLoaderPriority(true);
       
              server.setHandler(context);
+//             <connectors>
+//				<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+//					<port>8080</port>
+//					<maxIdleTime>60000</maxIdleTime>
+//				</connector>
+//				<connector implementation="org.eclipse.jetty.server.ssl.SslSocketConnector">
+//					<port>8443</port>
+//					<maxIdleTime>60000</maxIdleTime>
+//					<keystore>${project.build.directory}/jetty-ssl.keystore</keystore>
+//					<password>jetty6</password>
+//					<keyPassword>jetty6</keyPassword>
+//				</connector>
+//			</connectors>
+            
+//             SelectChannelConnector sConnector = new SelectChannelConnector();
+//             sConnector.setPort(TEST_PORT);
+//             sConnector.setMaxIdleTime(60000);
+             
+             SslSocketConnector sslConnecor = new SslSocketConnector();
+             sslConnecor.setPort(TEST_SECURE_PORT);
+             sslConnecor.setKeystore("target/jetty-ssl.keystore");
+             sslConnecor.setMaxIdleTime(60000);
+             sslConnecor.setKeyPassword("jetty6");
+             sslConnecor.setPassword("jetty6");
+             
+            // server.addConnector(sConnector);
+             server.addConnector(sslConnecor);
       
              server.start();
              //server.join();

@@ -1,10 +1,10 @@
 package core.september.sparkrest.entity;
 
+import java.util.Date;
 import java.util.UUID;
 
 import org.mongodb.morphia.annotations.Embedded;
 import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Transient;
 
 import core.september.sparkrest.common.Utils;
  
@@ -17,6 +17,7 @@ public class Account extends BaseEntity {
     private String salt;
     private String email;
     private String token;
+    private Date tokenExpireAt;
     @Embedded
     private Address address;
 //    @Transient
@@ -90,14 +91,16 @@ public class Account extends BaseEntity {
 	public void setToken(String token) {
 		this.token = token;
 	}
+	
+	
 
-//	public String getPassword() {
-//		return password;
-//	}
-//
-//	public void setPassword(String password) {
-//		this.password = password;
-//	}
+	public Date getTokenExpireAt() {
+		return tokenExpireAt;
+	}
+
+	public void setTokenExpireAt(Date tokenExpireAt) {
+		this.tokenExpireAt = tokenExpireAt;
+	}
 
 	public boolean checkExistence(Account storedAccount) {
 		setSalt(storedAccount.getSalt());

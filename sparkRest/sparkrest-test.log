@@ -1,0 +1,188 @@
+188   DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+190   DEBUG org.eclipse.jetty.util.log - Container org.eclipse.jetty.server.Server@3d24753a + SelectChannelConnector@0.0.0.0:9090 as connector
+212   DEBUG org.eclipse.jetty.util.log - Container org.eclipse.jetty.server.Server@3d24753a + WebAppContext@54a097cc@54a097cc/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/ as handler
+212   DEBUG org.eclipse.jetty.util.log - Container WebAppContext@54a097cc@54a097cc/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/ + ErrorPageErrorHandler@36f6e879 as error
+218   DEBUG org.eclipse.jetty.util.log - Container org.eclipse.jetty.server.Server@3d24753a + SslSocketConnector@0.0.0.0:9443 as connector
+218   DEBUG org.eclipse.jetty.util.log - Starting org.eclipse.jetty.server.Server@3d24753a
+218   INFO  org.eclipse.jetty.util.log - jetty-8.0.0.M2
+232   DEBUG org.eclipse.jetty.util.log - Container org.eclipse.jetty.server.Server@3d24753a + qtp269468037{8<=0<=0/254,-1} as threadpool
+232   DEBUG org.eclipse.jetty.util.log - Starting qtp269468037{8<=0<=0/254,-1}
+234   DEBUG org.eclipse.jetty.util.log - STARTED qtp269468037{8<=7<=8/254,0}
+234   DEBUG org.eclipse.jetty.util.log - Starting WebAppContext@54a097cc@54a097cc/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/
+241   DEBUG org.eclipse.jetty.util.log - Thread Context class loader is: WebAppClassLoader@1165897474
+241   DEBUG org.eclipse.jetty.util.log - Parent class loader is: sun.misc.Launcher$AppClassLoader@2c7b84de
+241   DEBUG org.eclipse.jetty.util.log - Parent class loader is: sun.misc.Launcher$ExtClassLoader@4ac68d3e
+244   DEBUG org.eclipse.jetty.util.log - Set temp dir /tmp/jetty-0.0.0.0-9090-webapp-_-any-
+251   DEBUG org.eclipse.jetty.util.log - parse: jar:file:/home/christian/.m2/repository/org/eclipse/jetty/jetty-webapp/8.0.0.M2/jetty-webapp-8.0.0.M2.jar!/org/eclipse/jetty/webapp/webdefault.xml
+252   DEBUG org.eclipse.jetty.util.log - parsing: sid=jar:file:/home/christian/.m2/repository/org/eclipse/jetty/jetty-webapp/8.0.0.M2/jetty-webapp-8.0.0.M2.jar!/org/eclipse/jetty/webapp/webdefault.xml,pid=null
+267   DEBUG org.eclipse.jetty.util.log - jar:file:/home/christian/.m2/repository/org/eclipse/jetty/jetty-webapp/8.0.0.M2/jetty-webapp-8.0.0.M2.jar!/org/eclipse/jetty/webapp/webdefault.xml: Calculated metadatacomplete = True with version=2.5
+267   DEBUG org.eclipse.jetty.util.log - parse: file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/WEB-INF/web.xml
+268   DEBUG org.eclipse.jetty.util.log - parsing: sid=file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/WEB-INF/web.xml,pid=null
+270   DEBUG org.eclipse.jetty.util.log - resolveEntity(-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN, http://java.sun.com/dtd/web-app_2_3.dtd)
+270   DEBUG org.eclipse.jetty.util.log - Redirected entity http://java.sun.com/dtd/web-app_2_3.dtd --> jar:file:/home/christian/.m2/repository/org/mortbay/jetty/servlet-api/3.0.20100224/servlet-api-3.0.20100224.jar!/javax/servlet/resources/web-app_2_3.dtd
+279   DEBUG org.eclipse.jetty.util.log - file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/WEB-INF/web.xml: Calculated metadatacomplete = NotSet with version=DTD
+293   DEBUG org.eclipse.jetty.util.log - Configuring web-jetty.xml
+306   DEBUG org.eclipse.jetty.util.log - filterNameMap={}
+306   DEBUG org.eclipse.jetty.util.log - pathFilters=null
+306   DEBUG org.eclipse.jetty.util.log - servletFilterMap=null
+306   DEBUG org.eclipse.jetty.util.log - servletPathMap={/=default}
+306   DEBUG org.eclipse.jetty.util.log - servletNameMap={default=default}
+309   INFO  org.eclipse.jetty.util.log - NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+312   DEBUG org.eclipse.jetty.util.log - filterNameMap={}
+312   DEBUG org.eclipse.jetty.util.log - pathFilters=null
+313   DEBUG org.eclipse.jetty.util.log - servletFilterMap=null
+313   DEBUG org.eclipse.jetty.util.log - servletPathMap={*.jspx=jsp, *.JSPX=jsp, *.jsp=jsp, *.JSPF=jsp, *.jspf=jsp, *.JSP=jsp, *.xsp=jsp, *.XSP=jsp, /=default}
+313   DEBUG org.eclipse.jetty.util.log - servletNameMap={default=default, jsp=jsp}
+334   DEBUG org.eclipse.jetty.util.log - filterNameMap={SparkFilter=SparkFilter}
+334   DEBUG org.eclipse.jetty.util.log - pathFilters=[[/*]/[]==0=>SparkFilter]
+335   DEBUG org.eclipse.jetty.util.log - servletFilterMap={}
+335   DEBUG org.eclipse.jetty.util.log - servletPathMap={*.jspx=jsp, *.JSPX=jsp, *.jsp=jsp, *.JSPF=jsp, *.jspf=jsp, *.JSP=jsp, *.xsp=jsp, *.XSP=jsp, /=default}
+335   DEBUG org.eclipse.jetty.util.log - servletNameMap={default=default, jsp=jsp}
+335   DEBUG org.eclipse.jetty.util.log - filterNameMap={SparkFilter=SparkFilter}
+335   DEBUG org.eclipse.jetty.util.log - pathFilters=[[/*]/[]==0=>SparkFilter]
+335   DEBUG org.eclipse.jetty.util.log - servletFilterMap={}
+335   DEBUG org.eclipse.jetty.util.log - servletPathMap={*.jspx=jsp, *.JSPX=jsp, *.jsp=jsp, *.JSPF=jsp, *.jspf=jsp, *.JSP=jsp, *.xsp=jsp, *.XSP=jsp, /logs=Log, /=default}
+336   DEBUG org.eclipse.jetty.util.log - servletNameMap={default=default, Log=Log, jsp=jsp}
+336   DEBUG org.eclipse.jetty.util.log - Container WebAppContext@54a097cc@54a097cc/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/ + SessionHandler@32d2fa64@ as handler
+336   DEBUG org.eclipse.jetty.util.log - Container ServletHandler@1d8d30f7@ + SparkFilter as filter
+336   DEBUG org.eclipse.jetty.util.log - Container ServletHandler@1d8d30f7@ + [/*]/[]==0=>SparkFilter as filterMapping
+336   DEBUG org.eclipse.jetty.util.log - Container ServletHandler@1d8d30f7@ + default as servlet
+336   DEBUG org.eclipse.jetty.util.log - Container ServletHandler@1d8d30f7@ + jsp as servlet
+336   DEBUG org.eclipse.jetty.util.log - Container ServletHandler@1d8d30f7@ + Log as servlet
+337   DEBUG org.eclipse.jetty.util.log - Container ServletHandler@1d8d30f7@ + [/]=>default as servletMapping
+337   DEBUG org.eclipse.jetty.util.log - Container ServletHandler@1d8d30f7@ + [*.jsp, *.jspf, *.jspx, *.xsp, *.JSP, *.JSPF, *.JSPX, *.XSP]=>jsp as servletMapping
+337   DEBUG org.eclipse.jetty.util.log - Container ServletHandler@1d8d30f7@ + [/logs]=>Log as servletMapping
+337   DEBUG org.eclipse.jetty.util.log - Container ConstraintSecurityHandler@3e57cd70@ + ServletHandler@1d8d30f7@ as handler
+337   DEBUG org.eclipse.jetty.util.log - Container SessionHandler@32d2fa64@ + ConstraintSecurityHandler@3e57cd70@ as handler
+337   DEBUG org.eclipse.jetty.util.log - Container SessionHandler@32d2fa64@ + org.eclipse.jetty.server.session.HashSessionManager@9a7504c as sessionManager
+337   DEBUG org.eclipse.jetty.util.log - Starting SessionHandler@32d2fa64@
+337   DEBUG org.eclipse.jetty.util.log - Starting org.eclipse.jetty.server.session.HashSessionManager@9a7504c
+339   DEBUG org.eclipse.jetty.util.log - Container org.eclipse.jetty.server.Server@3d24753a + org.eclipse.jetty.server.session.HashSessionIdManager@5bb21b69 as sessionIdManager
+339   DEBUG org.eclipse.jetty.util.log - Starting org.eclipse.jetty.server.session.HashSessionIdManager@5bb21b69
+351   DEBUG org.eclipse.jetty.util.log - STARTED org.eclipse.jetty.server.session.HashSessionIdManager@5bb21b69
+352   DEBUG org.eclipse.jetty.util.log - STARTED org.eclipse.jetty.server.session.HashSessionManager@9a7504c
+352   DEBUG org.eclipse.jetty.util.log - Starting ConstraintSecurityHandler@3e57cd70@
+357   DEBUG org.eclipse.jetty.util.log - Starting ServletHandler@1d8d30f7@
+357   DEBUG org.eclipse.jetty.util.log - filterNameMap={SparkFilter=SparkFilter}
+357   DEBUG org.eclipse.jetty.util.log - pathFilters=[[/*]/[]==0=>SparkFilter]
+357   DEBUG org.eclipse.jetty.util.log - servletFilterMap={}
+357   DEBUG org.eclipse.jetty.util.log - servletPathMap={*.jspx=jsp, *.JSPX=jsp, *.jsp=jsp, *.JSPF=jsp, *.jspf=jsp, *.JSP=jsp, *.xsp=jsp, *.XSP=jsp, /logs=Log, /=default}
+357   DEBUG org.eclipse.jetty.util.log - servletNameMap={default=default, Log=Log, jsp=jsp}
+357   DEBUG org.eclipse.jetty.util.log - starting ServletHandler@1d8d30f7@
+358   DEBUG org.eclipse.jetty.util.log - STARTED ServletHandler@1d8d30f7@
+358   DEBUG org.eclipse.jetty.util.log - starting ConstraintSecurityHandler@3e57cd70@
+358   DEBUG org.eclipse.jetty.util.log - STARTED ConstraintSecurityHandler@3e57cd70@
+358   DEBUG org.eclipse.jetty.util.log - starting SessionHandler@32d2fa64@
+358   DEBUG org.eclipse.jetty.util.log - STARTED SessionHandler@32d2fa64@
+358   DEBUG org.eclipse.jetty.util.log - starting WebAppContext@54a097cc@54a097cc/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/
+358   DEBUG org.eclipse.jetty.util.log - Starting ErrorPageErrorHandler@36f6e879@
+358   DEBUG org.eclipse.jetty.util.log - starting ErrorPageErrorHandler@36f6e879@
+358   DEBUG org.eclipse.jetty.util.log - STARTED ErrorPageErrorHandler@36f6e879@
+358   DEBUG org.eclipse.jetty.util.log - Starting SparkFilter
+359   DEBUG org.eclipse.jetty.util.log - loaded class spark.servlet.SparkFilter
+359   DEBUG org.eclipse.jetty.util.log - loaded class spark.servlet.SparkFilter from sun.misc.Launcher$AppClassLoader@2c7b84de
+359   DEBUG org.eclipse.jetty.util.log - Holding class spark.servlet.SparkFilter
+361   DEBUG spark.route.RouteMatcherFactory - creates RouteMatcher
+371   DEBUG spark.route.SimpleRouteMatcher - Adds route: get, /sysinfo, core.september.sparkrest.app.RestApplication$1@10a035a0
+371   DEBUG spark.route.SimpleRouteMatcher - Adds route: get, /sec, core.september.sparkrest.app.RestApplication$2@67b467e9
+371   DEBUG spark.route.SimpleRouteMatcher - Adds route: post, /sec/:customer/signup, core.september.sparkrest.app.RestApplication$3@47db50c5
+371   DEBUG spark.route.SimpleRouteMatcher - Adds route: post, /sec/:customer/signin, core.september.sparkrest.app.RestApplication$4@5c072e3f
+371   DEBUG spark.route.SimpleRouteMatcher - Adds route: get, /pub/505, core.september.sparkrest.app.RestApplication$5@4d1b0d2a
+371   DEBUG spark.route.SimpleRouteMatcher - Adds route: before, /auth/*, core.september.sparkrest.app.RestApplication$6@954b04f
+371   DEBUG spark.route.SimpleRouteMatcher - Adds route: get, /auth/:customer, core.september.sparkrest.app.RestApplication$7@149494d8
+385   DEBUG org.eclipse.jetty.util.log - STARTED SparkFilter
+385   DEBUG org.eclipse.jetty.util.log - Starting Log
+387   DEBUG org.eclipse.jetty.util.log - loaded class ch.qos.logback.classic.ViewStatusMessagesServlet
+387   DEBUG org.eclipse.jetty.util.log - loaded class ch.qos.logback.classic.ViewStatusMessagesServlet from sun.misc.Launcher$AppClassLoader@2c7b84de
+387   DEBUG org.eclipse.jetty.util.log - Holding class ch.qos.logback.classic.ViewStatusMessagesServlet
+387   DEBUG org.eclipse.jetty.util.log - STARTED Log
+387   DEBUG org.eclipse.jetty.util.log - Starting default
+388   DEBUG org.eclipse.jetty.util.log - loaded class org.eclipse.jetty.servlet.DefaultServlet
+388   DEBUG org.eclipse.jetty.util.log - loaded class org.eclipse.jetty.servlet.DefaultServlet from sun.misc.Launcher$AppClassLoader@2c7b84de
+388   DEBUG org.eclipse.jetty.util.log - Holding class org.eclipse.jetty.servlet.DefaultServlet
+393   DEBUG org.eclipse.jetty.util.log - ignoring resource cache configuration, using resourceCache attribute
+397   DEBUG org.eclipse.jetty.util.log - Cache resourceCache=null
+398   DEBUG org.eclipse.jetty.util.log - resource base = null
+398   DEBUG org.eclipse.jetty.util.log - STARTED default
+398   DEBUG org.eclipse.jetty.util.log - Starting jsp
+398   DEBUG org.eclipse.jetty.util.log - Holding class org.eclipse.jetty.servlet.NoJspServlet
+399   DEBUG org.eclipse.jetty.util.log - STARTED jsp
+399   DEBUG org.eclipse.jetty.util.log - STARTED WebAppContext@54a097cc@54a097cc/,file:/home/christian/git/SpringREST/sparkRest/src/main/webapp/
+399   DEBUG org.eclipse.jetty.util.log - starting org.eclipse.jetty.server.Server@3d24753a
+399   DEBUG org.eclipse.jetty.util.log - Starting SelectChannelConnector@0.0.0.0:9090
+399   DEBUG org.eclipse.jetty.util.log - Starting org.eclipse.jetty.server.nio.SelectChannelConnector$1@4b53f538
+403   DEBUG org.eclipse.jetty.util.log - STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$1@4b53f538
+406   INFO  org.eclipse.jetty.util.log - Started SelectChannelConnector@0.0.0.0:9090
+406   DEBUG org.eclipse.jetty.util.log - STARTED SelectChannelConnector@0.0.0.0:9090
+407   DEBUG org.eclipse.jetty.util.log - Starting SslSocketConnector@0.0.0.0:9443
+572   INFO  org.eclipse.jetty.util.log - Started SslSocketConnector@0.0.0.0:9443
+572   DEBUG org.eclipse.jetty.util.log - STARTED SslSocketConnector@0.0.0.0:9443
+573   DEBUG org.eclipse.jetty.util.log - STARTED org.eclipse.jetty.server.Server@3d24753a
+691   INFO  o.m.m.logging.MorphiaLoggerFactory - LoggerImplFactory set to org.mongodb.morphia.logging.slf4j.SLF4JLoggerImplFactory
+722   DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Address for core.september.sparkrest.entity.Address fields:[number ( type:String, single:true); {}, street ( type:String, single:true); {}, town ( type:String, single:true); {}, postcode ( type:String, single:true); {}]
+736   DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Account for core.september.sparkrest.entity.Account fields:[name ( type:String, single:true); {}, surname ( type:String, single:true); {}, hashedPassword ( type:String, single:true); {}, salt ( type:String, single:true); {}, email ( type:String, single:true); {}, token ( type:String, single:true); {}, tokenExpireAt ( type:Date, single:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]
+737   DEBUG o.m.morphia.mapping.MappedField - found instance of ParameterizedType : java.util.List<core.september.sparkrest.entity.Account>
+738   DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Customer for core.september.sparkrest.entity.Customer fields:[name ( type:String, single:true); {}, accounts ( type:List, multiple:true, subtype:class core.september.sparkrest.entity.Account, collection:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]
+850   DEBUG o.m.morphia.mapping.MappedField - found instance of ParameterizedType : java.util.List<core.september.sparkrest.entity.Account>
+852   DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Customer for core.september.sparkrest.entity.Customer fields:[name ( type:String, single:true); {}, accounts ( type:List, multiple:true, subtype:class core.september.sparkrest.entity.Account, collection:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]
+855   DEBUG org.mongodb.morphia.mapping.Mapper - No annotation was found, using default mapper org.mongodb.morphia.mapping.EmbeddedMapper@d29f28 for accounts ( type:List, multiple:true, subtype:class core.september.sparkrest.entity.Account, collection:true); {}
+1099  DEBUG org.eclipse.jetty.util.log - REQUEST /sec/september/signup on org.eclipse.jetty.server.HttpConnection@61b4cc7a
+1099  DEBUG org.eclipse.jetty.util.log - sessionManager=org.eclipse.jetty.server.session.HashSessionManager@9a7504c
+1099  DEBUG org.eclipse.jetty.util.log - session=null
+1099  DEBUG org.eclipse.jetty.util.log - servlet=default
+1099  DEBUG org.eclipse.jetty.util.log - servlet holder=
+1102  DEBUG org.eclipse.jetty.util.log - chain=
+1103  DEBUG org.eclipse.jetty.util.log - call filter SparkFilter
+1103  DEBUG spark.servlet.SparkFilter - /sec/september/signup
+1105  DEBUG spark.webserver.MatcherFilter - httpMethod:post, uri: /sec/september/signup
+1107  DEBUG spark.Request - get params
+1107  DEBUG spark.Request - matchedPart: :customer = september
+1107  DEBUG spark.Request - get splat
+1115  DEBUG o.m.morphia.mapping.MappedField - found instance of ParameterizedType : java.util.List<core.september.sparkrest.entity.Account>
+1116  DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Customer for core.september.sparkrest.entity.Customer fields:[name ( type:String, single:true); {}, accounts ( type:List, multiple:true, subtype:class core.september.sparkrest.entity.Account, collection:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]
+1128  DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:String for java.lang.String fields:[value ( type:char[], multiple:true, subtype:char, array:true); {}, hash ( type:int, single:true); {}]
+1132  DEBUG org.eclipse.jetty.util.log - loaded class core.september.sparkrest.entity.Customer
+1132  DEBUG org.eclipse.jetty.util.log - loaded class core.september.sparkrest.entity.Customer from sun.misc.Launcher$AppClassLoader@2c7b84de
+1134  DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Account for core.september.sparkrest.entity.Account fields:[name ( type:String, single:true); {}, surname ( type:String, single:true); {}, hashedPassword ( type:String, single:true); {}, salt ( type:String, single:true); {}, email ( type:String, single:true); {}, token ( type:String, single:true); {}, tokenExpireAt ( type:Date, single:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]
+1136  DEBUG org.mongodb.morphia.mapping.Mapper - No annotation was found, using default mapper org.mongodb.morphia.mapping.EmbeddedMapper@d29f28 for accounts ( type:List, multiple:true, subtype:class core.september.sparkrest.entity.Account, collection:true); {}
+1137  DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:ObjectId for org.bson.types.ObjectId fields:[_time ( type:int, single:true); {}, _machine ( type:int, single:true); {}, _inc ( type:int, single:true); {}, _new ( type:boolean, single:true); {}]
+1140  DEBUG spark.webserver.MatcherFilter - Time for request: 36
+1141  DEBUG org.eclipse.jetty.util.log - RESPONSE /sec/september/signup  200
+1173  DEBUG org.eclipse.jetty.util.log - REQUEST /sec/september/signin on org.eclipse.jetty.server.HttpConnection@3f02004f
+1173  DEBUG org.eclipse.jetty.util.log - sessionManager=org.eclipse.jetty.server.session.HashSessionManager@9a7504c
+1173  DEBUG org.eclipse.jetty.util.log - session=null
+1173  DEBUG org.eclipse.jetty.util.log - servlet=default
+1174  DEBUG org.eclipse.jetty.util.log - servlet holder=
+1174  DEBUG org.eclipse.jetty.util.log - chain=
+1174  DEBUG org.eclipse.jetty.util.log - call filter SparkFilter
+1174  DEBUG spark.servlet.SparkFilter - /sec/september/signin
+1174  DEBUG spark.webserver.MatcherFilter - httpMethod:post, uri: /sec/september/signin
+1174  DEBUG spark.Request - get params
+1174  DEBUG spark.Request - matchedPart: :customer = september
+1174  DEBUG spark.Request - get splat
+1177  DEBUG o.m.morphia.mapping.MappedField - found instance of ParameterizedType : java.util.List<core.september.sparkrest.entity.Account>
+1178  DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Customer for core.september.sparkrest.entity.Customer fields:[name ( type:String, single:true); {}, accounts ( type:List, multiple:true, subtype:class core.september.sparkrest.entity.Account, collection:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]
+1181  DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Account for core.september.sparkrest.entity.Account fields:[name ( type:String, single:true); {}, surname ( type:String, single:true); {}, hashedPassword ( type:String, single:true); {}, salt ( type:String, single:true); {}, email ( type:String, single:true); {}, token ( type:String, single:true); {}, tokenExpireAt ( type:Date, single:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]
+1183  DEBUG org.eclipse.jetty.util.log - loaded class core.september.sparkrest.entity.Account
+1183  DEBUG org.eclipse.jetty.util.log - loaded class core.september.sparkrest.entity.Account from sun.misc.Launcher$AppClassLoader@2c7b84de
+1185  DEBUG spark.webserver.MatcherFilter - Time for request: 11
+1185  DEBUG org.eclipse.jetty.util.log - RESPONSE /sec/september/signin  200
+1187  DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Account for core.september.sparkrest.entity.Account fields:[name ( type:String, single:true); {}, surname ( type:String, single:true); {}, hashedPassword ( type:String, single:true); {}, salt ( type:String, single:true); {}, email ( type:String, single:true); {}, token ( type:String, single:true); {}, tokenExpireAt ( type:Date, single:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]
+1195  DEBUG org.eclipse.jetty.util.log - REQUEST /auth/uno on org.eclipse.jetty.server.nio.SelectChannelConnector$3@15282d7c
+1195  DEBUG org.eclipse.jetty.util.log - sessionManager=org.eclipse.jetty.server.session.HashSessionManager@9a7504c
+1195  DEBUG org.eclipse.jetty.util.log - session=null
+1195  DEBUG org.eclipse.jetty.util.log - servlet=default
+1195  DEBUG org.eclipse.jetty.util.log - servlet holder=
+1195  DEBUG org.eclipse.jetty.util.log - chain=
+1195  DEBUG org.eclipse.jetty.util.log - call filter SparkFilter
+1195  DEBUG spark.servlet.SparkFilter - /auth/uno
+1195  DEBUG spark.webserver.MatcherFilter - httpMethod:get, uri: /auth/uno
+1196  DEBUG spark.Request - get params
+1196  DEBUG spark.Request - get splat
+1197  DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Account for core.september.sparkrest.entity.Account fields:[name ( type:String, single:true); {}, surname ( type:String, single:true); {}, hashedPassword ( type:String, single:true); {}, salt ( type:String, single:true); {}, email ( type:String, single:true); {}, token ( type:String, single:true); {}, tokenExpireAt ( type:Date, single:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]
+1198  DEBUG spark.Request - get params
+1198  DEBUG spark.Request - matchedPart: :customer = uno
+1198  DEBUG spark.Request - get splat
+1198  DEBUG spark.webserver.MatcherFilter - Time for request: 3
+1199  DEBUG org.eclipse.jetty.util.log - RESPONSE /auth/uno  200
+1200  DEBUG o.m.morphia.mapping.MappedClass - MappedClass done: MappedClass - kind:Account for core.september.sparkrest.entity.Account fields:[name ( type:String, single:true); {}, surname ( type:String, single:true); {}, hashedPassword ( type:String, single:true); {}, salt ( type:String, single:true); {}, email ( type:String, single:true); {}, token ( type:String, single:true); {}, tokenExpireAt ( type:Date, single:true); {}, address ( type:Address, single:true); {interface org.mongodb.morphia.annotations.Embedded=@org.mongodb.morphia.annotations.Embedded(value=., concreteClass=class java.lang.Object)}, _id ( type:ObjectId, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=id, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Id=@org.mongodb.morphia.annotations.Id()}, version ( type:Long, single:true); {interface org.mongodb.morphia.annotations.Property=@org.mongodb.morphia.annotations.Property(value=version, concreteClass=class java.lang.Object), interface org.mongodb.morphia.annotations.Version=@org.mongodb.morphia.annotations.Version(value=.)}]

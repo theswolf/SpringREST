@@ -1,5 +1,9 @@
 package core.september.sparkrest.controller;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.dao.BasicDAO;
 import org.mongodb.morphia.query.Query;
@@ -11,7 +15,7 @@ import core.september.sparkrest.common.Utils;
 import core.september.sparkrest.entity.Account;
 import core.september.sparkrest.entity.Customer;
 
-@Controller(path="/pub/:customer/signup")
+@Controller(path="/sec/:customer/signup")
 public class SignUpController extends BaseController {
 
 	public SignUpController(Request req) {

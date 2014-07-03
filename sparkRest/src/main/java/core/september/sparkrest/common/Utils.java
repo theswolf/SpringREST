@@ -13,6 +13,9 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Enumeration;
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
@@ -23,7 +26,10 @@ import org.slf4j.LoggerFactory;
 import spark.Request;
 import spark.Response;
 import core.september.sparkrest.annotation.Controller;
+import core.september.sparkrest.annotation.Customer;
 import core.september.sparkrest.app.AppListener;
+import core.september.sparkrest.app.RestApplication;
+import core.september.sparkrest.app.customer.CustomerRouter;
 import core.september.sparkrest.controller.BaseController;
 import core.september.sparkrest.data.DataStore;
 
@@ -32,9 +38,10 @@ public class Utils {
 	//ReaderUtil readerUtil = new ReaderUtil(new GenericObjectPool<StringBuffer>(new StringBufferFactory()));
 
 	public static Utils INSTANCE = new Utils();
+	private static ExecutorService executor = Executors.newFixedThreadPool(Constants.THREAD_POOL);
+	
 	
 	private Utils() {
-		
 	}
 	
 	public String handle500(Throwable t,Response res,Class instanceClass) {
@@ -80,6 +87,30 @@ public class Utils {
 			}
 		}
 		throw new Exception("No such controller for path: "+path);
+	}
+	
+	public void assignCustomRoutes() throws Exception {
+		ArrayList<Class<?>> customers = getClassesForPackage(CustomerRouter.class.getPackage());
+		for(Class<?> clz: customers) {
+			for(Annotation annotation: clz.getAnnotations()) {
+				if(annotation.annotationType().equals(Customer.class)) {
+					((CustomerRouter)clz.newInstance()).assign();
+				}
+			}
+		}
+		
+	}
+	
+	public String doOp(String path,Request req, Response res) {
+		try {
+			Callable<String> callable = getController(path, req);
+			FutureTask<String> futureTask = new FutureTask<String>(callable);
+			executor.execute(futureTask);
+			return json(res, futureTask.get());
+		} catch (Exception e) {
+			return json(res,Utils.INSTANCE.handle500(e, res,
+					RestApplication.class));
+		}
 	}
 	
 	private static ArrayList<Class<?>> getClassesForPackage(Package pkg) {
